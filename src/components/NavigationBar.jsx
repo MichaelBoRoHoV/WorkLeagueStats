@@ -4,15 +4,16 @@ import Nav from "react-bootstrap/Nav";
 
 
 function NavigationBar() {
-    return <header>
-    <Navbar bg="dark" variant="dark" fixed="top">
+    return (
+       <Navbar bg="dark" variant="dark" sticky="top">
        <img
             src = "images/brand-logo.png"
             className="d-inline-block align-top brand-logo"
             alt="WCS logo"
         />
-       <Navbar.Brand className="navbar-brand ml-2 font-weight-bold" href="#home"> WSC West</Navbar.Brand>
-            <Nav className="mr-auto">
+       <Navbar.Brand className="navbar-brand ml-2 font-weight-bold" href="#home"> WSC Basketball work league</Navbar.Brand>
+       <div className="container-fluied">
+            <Nav>
                 <Nav.Link className="nav-item nav-link pl-5" href="#players">
                     <i className="fas fa-user"></i>
                     {' '}Players <span className="sr-only"></span>
@@ -30,8 +31,9 @@ function NavigationBar() {
                     {' '}Leaders    
                 </Nav.Link>
             </Nav>
-    </Navbar>  
-    </header>
+        </div>
+        </Navbar>  
+    )
 }
 
 export default NavigationBar;

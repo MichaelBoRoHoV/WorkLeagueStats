@@ -6,7 +6,9 @@ function App(){
   return (
     <div>
       <NavigationBar />
-      <PlayerCard />
+      <div className="container-cards">
+        <PlayerCard />
+      </div>
     </div>
   )
 };
