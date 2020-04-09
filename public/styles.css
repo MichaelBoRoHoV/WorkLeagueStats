@@ -1,28 +1,149 @@
-/*
-body{
-    background-image: url('../images/gradient-soft-solid-color-4k_1551645740.jpg');
+body {
+    background: url(./images/ball.jpg);
 }
-*/
+
+/**NavBar**/
 .nav-link {
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: lighter;
 }
 
 .navbar-nav{
-   margin-left: 20rem;
+    margin-left: 5.5rem;
 }
 .brand-logo{
     position: relative;
-    width:50px;
-    height:50px;
-    margin-bottom: 5px;
+    width: 35px;
+    height: 35px;
+    
 }
 
 .navbar-brand{
-    font-size: 1.7rem;
+    font-size: 1.3rem;
     font-family: 'Oxanium', cursive;
 }
 
-.nav-bg{
-    background-color: #dee3e2;
+/**PlayerCard**/
+
+.container-cards{
+    padding: 2.5%;
+}
+
+.card {
+    display: inline-block;
+    margin: 20px 20px;
+    border-width: 0px;
+    border-radius: 15px;
+    position: relative;
+    background-color: #343a40;
+    height: 250px;
+    width: 200px;
+    transition: 0.5s ease;
+}
+
+.card:hover{
+    transform: scale(1.2);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+}
+  
+.card-top {
+    border-radius: 15px 15px 0 0;
+    height: 35px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    background-color: #142850;
+    color: seashell;
+}
+
+.card-top p {
+    padding: 5px;
+    margin: 0;
+}
+
+.card-body{
+    margin-top: 25px;
+    padding: 0;
+    height: 120px;
+    color: white;
+    display: flex;
+}
+
+.player-img {
+    margin: 30px 0 0 20px;
+    border-radius: 50%;
+    position: relative; 
+    border: 4px solid  #5f6769;
+    width: 60px;
+    height: 60px;
+}
+
+.player-info{
+    padding: 30px 0 0 15px;
+    flex:1px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.player-info div:nth-child(2) {
+    font-size: 10px;
+}
+
+.player-info div:nth-child(3) {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+
+.card-buttom{
+    height: 105px;
+    text-align: center;
+    color: white;
+}
+
+.card-buttom h1{
+    font-size: 16px;
+    font-family: fantasy;
+    color: #c2c1bc;
+}
+
+
+.card-buttom h1:before{
+    content: "";
+    display: block;
+    background: linear-gradient(to left, transparent, #c2c1bc, transparent);
+    width: 38%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: 38%;
+}
+
+.card-buttom h1:after{
+    content: "";
+    display: block;
+    width: 38%;
+    height: 2px;
+    background: linear-gradient(to right, transparent, #c2c1bc, transparent);
+    position: absolute;
+    right: 0;
+    bottom: 38%;
+}
+
+.grid-container{
+    display: grid;
+    padding-top: 5px;
+    grid-row-gap: 5px;
+    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    font-size: 12px;
+}
+
+.grid-header{
+    font-weight: bolder;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.grid-item{
+    color:#eae9e9;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
 }

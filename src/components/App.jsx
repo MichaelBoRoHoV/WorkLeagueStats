@@ -1,12 +1,14 @@
 import React from "react";
-import NavBar from "./NavBar";
+import NavigationBar from "./NavigationBar";
 import PlayerCard from "./PlayerCard";
 
 function App(){
   return (
     <div>
-      <NavBar />
-      <PlayerCard />
+      <NavigationBar />
+      <div className="container-cards">
+        <PlayerCard />
+      </div>
     </div>
   )
 };
