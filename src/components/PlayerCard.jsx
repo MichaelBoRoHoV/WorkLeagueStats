@@ -5,25 +5,25 @@ function PlayerCard(props) {
     return (
         <div className="card">
             <div className="card-top">  
-                <p>WSC-West</p>
+                <p>{props.teamName}</p>
             </div>
             <div className="card-body">
-                <img className="player-img" src="images/LeBron.png" alt="lebron james" />
+                <img className="player-img" src={props.img} alt={props.alt} />
                     <div className="player-info">
-                        <div className="jersy">#6</div>
-                        <div className="firstName">LEBRON</div>
-                        <div className="lastName">JAMES</div>
+                        <div className="jersy">#{props.jersey}</div>
+                        <div className="firstName">{props.fName}</div>
+                        <div className="lastName">{props.lName}</div>
                     </div>
             </div>
             <div className="card-buttom">
                 <h1>STATS</h1>
                 <div className="grid-container">
-                    <div className="grid-header">PTS</div>
-                    <div className="grid-header">REB</div>
-                    <div className="grid-header">AST</div>
-                    <div className="grid-item">38</div>
-                    <div className="grid-item">17</div>
-                    <div className="grid-item">12</div>
+                    <div className="grid-header">PPG</div>
+                    <div className="grid-header">RPG</div>
+                    <div className="grid-header">APG</div>
+                    <div className="grid-item">{props.ppg}</div>
+                    <div className="grid-item">{props.rpg}</div>
+                    <div className="grid-item">{props.apg}</div>
                 </div>
             </div>
        </div>
