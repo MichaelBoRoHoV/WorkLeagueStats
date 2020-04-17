@@ -2,6 +2,7 @@ import React from "react";
 import NavigationBar from "./NavigationBar";
 import PlayerCard from "./PlayerCard";
 import players from "../players.js"
+import CardTop from "./CardTop";
 
 function App(){
   return (
@@ -15,12 +16,12 @@ function App(){
             jersey = {player.jersey}
             fName = {player.firstName}
             lName = {player.lastName}
-            img = {player.imgURL} alt = "player image"  
+            img = {player.imgURL}   
             ppg = {player.stats.ppg}
             rpg = {player.stats.rpg}
             apg = {player.stats.apg}
           />
-        ))};
+        ))}
       </div>
     </div>
   )
