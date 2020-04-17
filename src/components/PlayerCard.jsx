@@ -1,14 +1,14 @@
 import React from "react";
-
+import CardTop from "./CardTop";
 
 function PlayerCard(props) {
     return (
         <div className="card">
-            <div className="card-top">  
-                <p>{props.teamName}</p>
-            </div>
+            <CardTop 
+            teamName = {props.teamName}
+            />
             <div className="card-body">
-                <img className="player-img" src={props.img} alt={props.alt} />
+                <img className="player-img" src={props.img} alt={props.alt}  />
                     <div className="player-info">
                         <div className="jersy">#{props.jersey}</div>
                         <div className="firstName">{props.fName}</div>

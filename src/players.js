@@ -27,6 +27,20 @@ const players = [
             rpg: 11,
             apg: 88
         }
+    },
+    {
+        id:3,
+        firstName: "",
+        lastName: "",
+        displayName: "",
+        jersey: "",
+        imgURL: "../images/default.png",
+        team: "",
+        stats:{
+            ppg: "",
+            rpg: "",
+            apg: ""
+        }
     }
 ];
 
