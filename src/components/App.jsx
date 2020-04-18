@@ -1,28 +1,24 @@
 import React from "react";
+import {BrowserRouter as Router,Switch,Route,Link} from "react-router-dom";
 import NavigationBar from "./NavigationBar";
-import PlayerCard from "./PlayerCard";
-import players from "../players.js"
-import CardTop from "./CardTop";
+import Players from "../pages/Players";
+import Home from "../pages/Home";
+
 
 function App(){
   return (
     <div>
-      <NavigationBar />
-      <div className="container-cards">
-        {players.map(player => (
-          <PlayerCard 
-            key = {player.id}
-            teamName = {player.team}
-            jersey = {player.jersey}
-            fName = {player.firstName}
-            lName = {player.lastName}
-            img = {player.imgURL}   
-            ppg = {player.stats.ppg}
-            rpg = {player.stats.rpg}
-            apg = {player.stats.apg}
-          />
-        ))}
-      </div>
+      <Router>
+        <NavigationBar />
+        <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/players">
+            <Players />
+          </Route>
+        </Switch>
+      </Router>
     </div>
   )
 };

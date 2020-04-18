@@ -8,12 +8,10 @@ function setTeamColor(teamName){
     switch (teamName) {
         case "WSC-West":
             return west;
-            break;
         case "WSC-East":
             return east;
         default:
             return other;
-            break;
     };
 }
 
