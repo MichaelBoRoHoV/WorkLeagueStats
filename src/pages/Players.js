@@ -1,10 +1,10 @@
 import React from "react";
-import players from "../players.js";
+import players from "../objects/players.js";
 import PlayerCard from "../components/PlayerCard";
 
 
 
-function Players(){
+function PlayersPage(){
     return (
         <div className="container-cards">
         {players.map(player => (
@@ -19,9 +19,10 @@ function Players(){
             rpg = {player.stats.rpg}
             apg = {player.stats.apg}
           />
+        
         ))}
       </div>
     )
 };
 
-export default Players;
+export default PlayersPage;
