@@ -5,10 +5,10 @@ const games = [{
       teamA: "WSC Sports West",
       scoreTeamA: 75
     },
-     {
+    {
       teamB: "Hod Hasharon Tzhfon",
       scoreTeamB: 43
-     }
+    }
     ],
     date: "11/11/2019",
     court: "Rebook",
@@ -19,11 +19,11 @@ const games = [{
     teams: [{
       teamA: "WSC Sports West",
       scoreTeamA: 63
-     },
-     {
+    },
+    {
       teamB: "AnyVision",
       scoreTeamB: 55
-     }
+    }
     ],
     date: "18/11/2019",
     court: "Ilanot",

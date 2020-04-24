@@ -2,9 +2,22 @@ import React from "react";
 import GameSelectOptions from "./GameSelectOptions";
 import games from "../objects/games.js";
 
-const [gameObj] = games;
-const {date,teams:[{teamA},{teamB}]} = gameObj;
-const desciption = teamA + " Vs. " + teamB + ", " + date;
+
+function CreateGamesList(game){
+    
+    const {date,teams:[{teamA},{teamB}]} = game;
+    const desciption = teamA + " Vs. " + teamB + ", " + date;
+    
+    return(
+        <GameSelectOptions
+            key = {game.id}
+            id = {game.id}
+            gameDesciption = {desciption}
+        />
+    )
+}
+
+
 
 
 
@@ -12,13 +25,7 @@ function GameSelect(props){
     return ( 
         <div className="select-box">
             <div className="options-container">
-            {games.map(game => (
-                <GameSelectOptions
-                    key = {game.id}
-                    id = {game.id}
-                    gameDesciption = {desciption}
-                />
-            ))}
+            {games.map(CreateGamesList)}
             </div>
 
             <div className="selected">
