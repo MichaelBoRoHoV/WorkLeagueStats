@@ -15,13 +15,13 @@ function NavigationBar() {
             <Link className="navbar-brand ml-2 font-weight-bold" to ="/" >WSC Basketball work league</Link>    
             <div className="container-fluied">
                 <Nav>
+                <Link className="nav-item nav-link pl-3" to="/games">
+                        <i className="fas fa-basketball-ball" aria-hidden="true"></i>  
+                        {' '}Games
+                    </Link>
                     <Link className="nav-item nav-link pl-5" to="/players">
                         <i className="fas fa-user"></i>
                         {' '}Players <span className="sr-only"></span>
-                    </Link>
-                    <Link className="nav-item nav-link pl-5" to="/games">
-                        <i className="fas fa-basketball-ball" aria-hidden="true"></i>  
-                        {' '}Games
                     </Link>
                     <Link className="nav-item nav-link pl-5" to="/stats">
                         <i className="far fa-chart-bar"></i>

@@ -5,20 +5,18 @@ import games from "../objects/games.js";
 
 function CreateGamesList(game){
     
-    const {date,teams:[{teamA},{teamB}]} = game;
+    const {id,date,teams:[{teamA},{teamB}]} = game;
     const desciption = teamA + " Vs. " + teamB + ", " + date;
     
+
     return(
         <GameSelectOptions
-            key = {game.id}
-            id = {game.id}
+            key = {id}
+            id = {id}
             gameDesciption = {desciption}
         />
     )
 }
-
-
-
 
 
 function GameSelect(props){

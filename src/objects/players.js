@@ -16,8 +16,8 @@ const players = [
     {
         id: 2,
         firstName: "Amir",
-        lastName: "Tawig",
-        displayName: "A.Tawig",
+        lastName: "Toueg",
+        displayName: "A.Toueg",
         jersey: 42,
         imgURL: "../images/default.png",
         team: "WSC-East",
