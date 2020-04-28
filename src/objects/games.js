@@ -1,4 +1,5 @@
-const games = [{
+const games = [
+    {
     id: 1,
     teams: [
     {

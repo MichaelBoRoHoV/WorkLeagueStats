@@ -1,7 +1,7 @@
 import React from "react";
 import Table from "react-bootstrap/Table";
 import TableRow from "./TableRow";
-import gamePlayerStats from "../objects/gamePlayerStats";
+import gamesData from "../objects/gamesData";
 
 
 
@@ -26,25 +26,27 @@ function GameTable(){
           </tr>
         </thead>
         <tbody>
-              {gamePlayerStats.map(playerStats=> (
-                <TableRow 
-                key = {playerStats.playerId}
-                id = {playerStats.playerId}
-                playerName = {playerStats.playerName}
-                pts = {playerStats.points}
-                reb = {playerStats.rebounds}
-                ast = {playerStats.assists}
-                stl = {playerStats.steals}
-                blk = {playerStats.blocks}
-                threePointsMade = {playerStats.threePointsMade}
-                fgm = {playerStats.fieldGoalMade}
-                fga = {playerStats.fieldGoalAtt}
-                fgp = {playerStats.fieldGoalPct}
-                ftm = {playerStats.freeThrowMade}
-                fta = {playerStats.freeThrowAtt}
-                ftp = {playerStats.freeThrowMade}
-                tov = {playerStats.turnover}
-               />
+              {gamesData.map(playerStats=> (
+                playerStats.gamePlayerStats.map(x=>(
+                  <TableRow 
+                     key = {x.playerId}
+                     id = {x.playerId}
+                     playerName = {x.playerName}
+                     pts = {x.points}
+                     reb = {x.rebounds}
+                     ast = {x.assists}
+                     stl = {x.steals}
+                     blk = {x.blocks}
+                     threePointsMade = {x.threePointsMade}
+                     fgm = {x.fieldGoalMade}
+                     fga = {x.fieldGoalAtt}
+                     fgp = {x.fieldGoalPct}
+                     ftm = {x.freeThrowMade}
+                     fta = {x.freeThrowAtt}
+                     ftp = {x.freeThrowMade}
+                     tov = {x.turnover}
+                   />
+                ))
               ))}
         </tbody>
       </Table>

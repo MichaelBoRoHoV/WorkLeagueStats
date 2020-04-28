@@ -1,4 +1,7 @@
-const gamePlayerStats = [
+const gameData = [
+    {
+        gameId: 12314,
+        gamePlayerStats: [
     {
         playerId: 1,
         playerName: "Michael borohov",
@@ -189,9 +192,8 @@ const gamePlayerStats = [
         freeThrowMade: 0,
         freeThrowPct: 0,
         turnover:0
+    }]
     }
-    
-
-];
+]; 
  
-export  default gamePlayerStats;
+export  default gameData;
