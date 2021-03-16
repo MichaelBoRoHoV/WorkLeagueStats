@@ -8,7 +8,6 @@ function CreateGamesList(game){
     const {id,date,teams:[{teamA},{teamB}]} = game;
     const desciption = teamA + " Vs. " + teamB + ", " + date;
     
-
     return(
         <GameSelectOptions
             key = {id}
@@ -19,7 +18,7 @@ function CreateGamesList(game){
 }
 
 
-function GameSelect(props){
+function Select(props){
     return ( 
         <div className="select-box">
             <div className="options-container">
@@ -27,7 +26,7 @@ function GameSelect(props){
             </div>
 
             <div className="selected">
-            Select A Game
+            {props.title}
             </div>
 
             <div className="search-box">
@@ -39,4 +38,4 @@ function GameSelect(props){
 
 
 
-export default GameSelect;
+export default Select;

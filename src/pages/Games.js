@@ -1,5 +1,5 @@
 import React from "react";
-import GameSelect from "../components/GameSelect";
+import Select from "../components/Select";
 import GameTable from "../components/GameTable";
 
 
@@ -10,7 +10,9 @@ function GamesPage() {
     return(
         <div>
             <div className="select-game-container">
-                <GameSelect />
+                <Select 
+                    title = "Select A Game"
+                />
             </div>
             <div className="container">
                 <GameTable/>

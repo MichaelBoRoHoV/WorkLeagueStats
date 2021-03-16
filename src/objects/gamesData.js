@@ -4,7 +4,7 @@ const gameData = [
         gamePlayerStats: [
     {
         playerId: 1,
-        playerName: "Michael borohov",
+        playerName: "Michael Borohov",
         points: 17,
         rebounds: 4,
         assists: 2,
